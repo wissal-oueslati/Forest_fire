@@ -23,7 +23,7 @@ Best performing model: YOLOV8
 
 ### Repair Cost Estimation
 Calculate the repair expenses by considering the manually inputted car brand, the severity of detected damage, and the identified damaged parts, utilizing the models from the preceding modules.
-Two dictionaries have been employed for mapping:
+ - Two dictionaries have been employed for mapping:
 car_types: Maps car brands to their corresponding types, such as Luxury or Standard.
 repair_cost_by_type: Maps car types, damage types, and severities to estimated repair costs.
 
