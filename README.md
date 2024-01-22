@@ -32,3 +32,4 @@ repair_cost_by_type: Maps car types, damage types, and severities to estimated r
 ![Platform overview](assets/cost.png)
 ## Additional Information
 For more details on each algorithm, model training, and external dependencies, refer to the specific sections in the source code.
+- this is the drive link for trained models: https://drive.google.com/drive/folders/1DVeaUE9Lx4F67DsFJOHiepMIfGv5R-RF?usp=sharing
