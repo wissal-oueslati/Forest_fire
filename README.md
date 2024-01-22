@@ -4,3 +4,31 @@ This project aims to revolutionize the assessment and analysis of damaged cars t
 
 ![Platform overview](assets/overview.png)
 ![ai check](assets/ai_check.png)
+
+## overview
+###  AI Image Detection
+An AI detection module is implemented to identify if an image of a damaged car is artificially generated or not. This helps ensure the authenticity of the input data.
+ - The module utilizes three distinct models: InceptionV3, a custom-built CNN, and ResNet50.
+ - Best performing model: custom-built CNN
+
+###  Damage Severity Assessment
+The severity classification module categorizes the detected car damages into three levels: Minor, Moderate, or Severe damage. This provides valuable information for insurance or repair purposes.
+ - The module employs three distinct models for this task: VGG16, a custom-built CNN, and ResNet50.
+ - Best performing model: Resnet50
+### Damage Detection
+Detect and highlight damages in the car image using two different algorithms:
+ - instance segmentation using Yolov8
+ - instance segmentation using MaskRcnn
+Best performing model: YOLOV8
+
+### Repair Cost Estimation
+Calculate the repair expenses by considering the manually inputted car brand, the severity of detected damage, and the identified damaged parts, utilizing the models from the preceding modules.
+Two dictionaries have been employed for mapping:
+car_types: Maps car brands to their corresponding types, such as Luxury or Standard.
+repair_cost_by_type: Maps car types, damage types, and severities to estimated repair costs.
+
+## interface
+![Platform overview](assets/damage_detection.png)
+![Platform overview](assets/cost.png)
+## Additional Information
+For more details on each algorithm, model training, and external dependencies, refer to the specific sections in the source code.
